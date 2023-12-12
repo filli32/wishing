@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <style>
+      body{      
+       background-color: gray;
+          } 
+      
+      p{
+         color: bisque;
+       } 
+       .user_image img{
+        background-size: cover;
+        width: 38vw;
+        height:auto;
+
+        }  
+      
+      
+
+
+      </style>
+
+  </head>
+  <body>
+    <div><p>{{wish.wisher}}</p></div>
+    <div><p>{{wish.recipientName}}</p></div>
+    <div><p>{{wish.recipientAge}}</p></div>
+    <div><p>{{wish.message}}</p></div>
+<div class="user_image">   <!-- in the wish view -->
+{{#if wish.image}}
+  <img src="{{wish.image}}" alt="Birthday Wish Image">
+{{/if}}
+
+</div>
+
+  </body>
+</html>

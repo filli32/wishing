@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+}
+
+.second_container {
+  position: absolute;
+  width: 90%;
+  height: 30rem;
+  left: 6%;
+  top: 0%;
+  /* border: 2px solid rebeccapurple; */
+
+}
+
+.first_heading {
+  position: absolute;
+  height: auto;
+  width: 20rem;
+  /* display: flex;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.whisher_name {
+  position: absolute;
+  top: 38%;
+  left: 15%;
+  width: 20rem;
+  height: 2rem;
+}
+
+.birthday_person {
+  position: absolute;
+  top: 46%;
+  left: 15%;
+  width: 20rem;
+  height: 2rem;
+}
+
+.agearea {
+  position: absolute;
+  top: 54%;
+  left: 15%;
+  width: 20rem;
+  height: 2rem;
+}
+
+.p_image {
+  position: absolute;
+  top: 62%;
+  left: 15%;
+  width: 20rem;
+  height: 2rem;
+}
+
+.message {
+  position: absolute;
+  top: 68%;
+  left: 15%;
+  width: 20rem;
+  height: 5rem;
+}
+
+
+.button {
+  position: absolute;
+  top: 86%;
+  left: 15%;
+  width: 20rem;
+  height: 2rem;
+
+}
+
+.third_container {
+  /* display: flex;
+  flex-direction: column; */
+  position: absolute;
+  top:80%
+
+}
+
+/* second area code start hare */
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+  /* position:absolute;
+  width: 70%;
+  height: 93rem;
+  left: 15%;
+  border: 2px solid green; */
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+
+}
+
+.quote {
+  width: 30rem;
+  margin-top: 1rem;
+
+}
+
+.birthday_gif img {
+
+  width: 30rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.244);
+  box-shadow: 2px 2px 40px rgba(243, 252, 182, 0.697);
+}
+
+.user_image {
+  box-shadow: 2px 2px 40px rgba(182, 242, 255, 0.722);
+  margin-top: 2rem;
+
+}
+
+.user_image img {
+  width: 30rem;
+
+}
+
+.meassage {
+  width: 30rem;
+  margin-top: 1rem;
+}
+
+.celebrate_button button {
+  font-size: 23px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 30rem;
+  height: 2rem;
+}
+
+.left_side {
+  position: fixed;
+  left: 1%;
+  width: auto;
+  height: 100%;
+  top: 1%;
+  color: #000;
+
+}
+
+.right_side {
+  position: fixed;
+  right: 1%;
+  width: auto;
+  height: 100%;
+  top: 1%;
+  color: #000;
+}
+
+/* *******************************************************
+            css code for papper effect
+******************************************************** */
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+#paper {
+  width: 30rem;
+  height: auto;
+  margin-top: 1rem;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #888;
+}
+
+/* styling red vertical line */
+#paper::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+/* styling blue horizontal lines */
+#pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+/* styling text content */
+#content {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cake */
+
+/* Candle Flame Animation */
+/* @keyframes flame {
+    0% {
+      transform: rotate(-45deg) scale(1);
+    }
+    100% {
+      transform: rotate(-45deg) scale(1.2);
+    }
+  } */
+/* 
+
+.cake {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    /* bottom: -50;
+    left: 35%;
+    background-color: #F5DEB3;
+    border-radius: 50% 50% 0 0;
+    box-shadow: inset -10px -10px 10px rgba(255,255,255,0.5), inset 10px 10px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Candle  */
+/* .candle { */
+/* display: flex; */
+/* position: absolute; */
+/* top: -50px;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 10px;
+    height: 50px;
+    background-color: #FFF;
+    border-radius: 50px 50px 0 0;
+    box-shadow: inset -2px -2px 2px rgba(255,255,255,0.5), inset 2px 2px 2px rgba(0,0,0,0.1), 0 0 5px rgba(255,0,0,0.5), 0 0 10px rgba(255,0,0,0.5), 0 0 20px rgba(255,0,0,0.5);
+  }
+  
+  /* Candle Flame 
+  .candle::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    box-shadow: 0 0 10px rgba(255,0,0,0.5), 0 0 20px rgba(255,0,0,0.5), 0 0 30px rgba(255,0,0,0.5), 0 0 40px rgba(255,0,0,0.5), 0 0 50px rgba(255,0,0,0.5), 0 0 60px rgba(255,0,0,0.5);
+    animation: flame 1s ease-in-out infinite alternate;
+  }
+  
+ */

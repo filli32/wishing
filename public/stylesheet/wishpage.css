@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  /* font-family: 'Mukta', sans-serif; */
+  /* width: 100%;
+  min-height: 100%; */
+ 
+
+}
+#audio{
+  /* visibility: hidden; */
+  position: absolute;
+  left: 30%;
+}
+
+.first_section{
+   display: flex;
+  width: 100%;
+  /* height: auto; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+ 
+}
+
+.name{
+  padding: 2rem;
+}
+.from{
+
+  font-size: 2rem;
+  
+}
+.birthday_gif img{
+  margin-top: 2rem;
+  
+}
+.user_image img{
+  width: 31rem;
+  height: auto;
+}
+
+.third_section{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 9rem;
+  place-items: center;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+.fourth_section{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  place-items: center;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+
+
+
+
+
+
+
+/* font desinge  */
+
+h1 {
+  font-family: "Rig Bold Face", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: normal;
+  /* margin-top: 10rem; */
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #91d4ff;
+}
+
+h1:before,
+h1:after,
+h1 span:before,
+h1 span:after {
+  content: attr(data-heading);
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+h1:before {
+  color: #fff;
+  font-family: "Rig Bold Inline", sans-serif;
+}
+
+h1:after {
+  font-family: "Rig Bold Coarse", sans-serif;
+  color: #040351;
+}
+
+span::before {
+  font-family: "Rig Bold Shadow", sans-serif;
+  color: #d2caaf00;
+  z-index: -1;
+}
+
+span::after {
+  font-family: "Rig Bold Extrude", sans-serif;
+  color: #4d8bea;
+  z-index: -1;
+}
+
+@font-face {
+  font-family: "Rig Bold Coarse";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldCoarse.otf");
+}
+
+@font-face {
+  font-family: "Rig Bold Extrude";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldExtrude.otf");
+}
+
+@font-face {
+  font-family: "Rig Bold Shadow";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldShadow.otf");
+}
+
+@font-face {
+  font-family: "Rig Bold Face";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldFace.otf");
+}
+
+@font-face {
+  font-family: "Rig Bold Inline";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldInline.otf");
+}
+
+
+.birthday_gif img {
+
+  /* width: 30rem;*/
+  margin-bottom: 1.1rem; 
+  background-color: rgba(255, 255, 255, 0.244);
+  box-shadow:
+   rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+   rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+   rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* .user_image {
+  box-shadow: 2px 2px 40px rgba(182, 242, 255, 0.722); 
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   margin-top: 1rem;
+
+} */
+
+.user_image img {
+  box-shadow:
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.meassage {
+  width: 30rem;
+  margin-top: 1rem;
+}
+
+/* .celebrate_button button {
+  font-size: 23px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 30rem;
+  height: 2rem;
+} */
+
+.left_side {
+  position: fixed;
+  left: 1%;
+  width: auto;
+  height: 100%;
+  top: 1%;
+  color: #000;
+
+}
+
+.right_side {
+  position: fixed;
+  right: 1%;
+  width: auto;
+  height: 100%;
+  top: 1%;
+  color: #000;
+}
+
+
+/* *******************************************************
+            css code for papper effect
+******************************************************** */
+/* Google font */
+
+
+#paper {
+  width: 31rem;
+  height: auto;
+  margin-top: 0.1rem;
+  position: relative;
+  margin: 20px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow:
+  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  z-index: -2;
+}
+
+/* styling red vertical line */
+#paper::before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+/* styling blue horizontal lines */
+#pattern {
+  height: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px);
+}
+
+/* styling text content */
+#content {
+  padding-top: 6px;
+  padding-left: 56px;
+  padding-right: 16px;
+  line-height: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+
+/* ***********celebrate button desine started hare****************** */
+
+#celebrate_btn {
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  box-shadow: 2px 2px 10px rgba(250, 251, 252, 0.557);
+
+}
+
+#let_celebrate {
+     cursor: pointer;
+ 
+}
+#let_celebrate:hover {
+  color: white;
+}
+
+#create_btn{
+  margin-top: 1rem;
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  box-shadow: 2px 2px 10px rgba(250, 251, 252, 0.557);
+}
+#create_btn a {
+  text-decoration: none;
+  color: #000;
+}
+#create_btn :hover{
+  color: #fff;
+}
+
+
+/* responsive degines */
+
+@media (max-width:1000px) {
+
+  .birthday_gif img {
+    width: 27rem;
+  }
+
+  .user_image img {
+    width: 27rem;
+  }
+
+  #paper {
+    width: 27rem;
+  }
+}
+
+
+@media (max-width:500px) {
+
+  .birthday_gif img {
+    width: 23.5rem;
+  }
+
+  .user_image img {
+    width: 23.5rem;
+  }
+
+  #paper {
+    width: 23.5rem;
+  }
+
+  
+  /* #celebrate_btn {
+    /* top:102rem; 
+
+  } */
+
+}
+
+@media (max-width:400px) {
+
+  .birthday_gif img {
+    width: 19rem;
+  }
+
+  .user_image img {
+    width: 19rem;
+  }
+
+  #paper {
+    width: 19rem;
+  }
+
+  /* .text2{
+    font-size: 2.1rem;
+    width: 19rem;
+    top: 121px;
+    left: -160px;
+  } */
+
+
+  /* #celebrate_btn {
+    top:92rem;
+
+  } */
+
+}
+
+@media (max-width:370px) {
+
+  .birthday_gif img {
+    width: 17.5rem;
+  }
+
+  .user_image img {
+    width: 17.5rem;
+  }
+
+  #paper {
+    width: 17.5rem;
+  }
+
+
+ 
+}
+
+
+@media (max-width:350px) {
+
+  .birthday_gif img {
+    width: 14.5rem;
+  }
+
+  .user_image img {
+    width: 14.5rem;
+  }
+
+  #paper {
+    width: 14.5rem;
+  }
+
+  .velas {
+    top: 77rem;
+  }
+  /* #celebrate_btn {
+    top:85rem;
+
+  } */
+}
+
+@media (max-width:301px) {
+h1{
+  font-size: 2.5rem;
+}
+
+  .birthday_gif img {
+    width: 13.5rem;
+  }
+
+  .user_image img {
+    width: 13.5rem;
+  }
+
+  #paper {
+    width: 13.5rem;
+  }
+
+
+}
+
+
+
+/* new cake css code  */
+.container {
+  padding-right: 3rem;
+  position: relative;
+}
+
+.bdayCake {
+  position: relative;
+  left:-100px;
+  top:100px;
+}
+
+.plate {
+  position: absolute;
+  width: 242px;
+  height:10px;
+  border-radius:10px;
+  background-color: #2a9d8f;
+}
+
+.plate:before {
+  content:"";
+  position: absolute;
+  width:195px;
+  height:90px;
+  background-color: #9c6644;
+  top:-90px;
+  left:25px;  
+}
+
+.plate:after {
+  content:"";
+  position: absolute;
+  width:195px;
+  left:25px;
+  height:10px;
+  background-color: #ffd166;
+  top:-60px;
+  box-shadow: 0px 25px #f4978e;
+}
+
+.cream {
+  position: absolute;
+  background-color: #f08080;
+  width:195px;
+  height:20px;
+  left:25px;
+  top:-110px;
+  border-radius:20px 20px 0 0;
+}
+
+.cream:before {
+  content:"";
+  position: absolute;
+  background-color: #f08080;
+  width:15px;
+  height:30px;
+  top:10px;
+  border-radius:20px;
+  box-shadow: 15px 5px #9c6644, 30px -5px #f08080, 45px 0px #9c6644, 60px 4px #f08080, 75px 3px #9c6644, 90px -5px #f08080, 105px 5px #9c6644, 120px -5px #f08080, 135px 0px #9c6644, 150px 4px #f08080, 165px 0px #9c6644, 180px 3px #f08080;
+}
+
+.cream:after {
+  position: absolute;
+  content:"";
+  background-color: rgba(0,0,0,0.1);
+  width: 97.5px;
+  height:110px;
+  left:98px;
+  border-radius: 0 20px 0 0;
+}
+
+.candle {
+  position: absolute;
+  width: 10px;
+  height:40px;
+  background: repeating-linear-gradient(#fae0e4,
+  #fae0e4 5px, #ff0a54 5px, #ff0a54 10px);
+  box-shadow: inset -5px 0px rgba(0,0,0,0.1);
+  top: -150px;
+  left:118px;
+}
+
+.candle:before {
+  content:"";
+  position: absolute;
+  background-color: #333;
+  width:2px;
+  height:10px;
+  top:-10px;
+  left:4px;
+}
+
+.candle:after {
+  content:"";
+  position: absolute;
+  width:20px;
+  height: 20px;
+  background-color:#fcca46;
+  border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+  box-shadow: inset -3px 3px #fe7f2d;
+  transform: rotate(-45deg);
+  top:-28px;
+  left:-5px;
+  opacity:0.9;
+  animation: scale .5s ease-out infinite;
+}
+
+@keyframes scale {
+  0% {transform: scaleY(1) rotate(-45deg); opacity:0.9;}
+  50% {transform: scaleY(0.9) rotate(-45deg); opacity:0.8;}
+  100% {transform: scaleY(1) rotate(-45deg); opacity: 0.9;}  
+}
+
+.flame {
+  display: inherit;
+  position: absolute; 
+} 
+
+ .flame:before {
+  display: inherit;
+  content:"";
+  position: absolute;
+  background-color: rgba(0,0,0,0.1);
+  height:10px;
+  width:118px;
+  border-radius:0 10px 10px 0;
+  top:0;
+  left:123px;
+}
+
+.one {
+  display: inherit;
+  position: absolute;
+  color: #fcca46;
+  font-size:20px;
+  top:-160px;
+  left: 100px;
+  text-shadow: 33px -30px #fcca46;
+  animation: flash .5s ease infinite alternate;
+}
+
+.two {
+  display: inherit;
+  position: absolute;
+  color: #fcca46;
+  font-size:15px;
+  top:-180px;
+  left: 100px;
+  text-shadow: 35px 30px #fcca46;
+  animation: flash .8s ease infinite alternate;
+}
+ 
+.three {
+  display: inherit;
+  position: absolute;
+  color: #fcca46;
+  font-size:10px;
+  top:-195px;
+  left: 110px;
+  text-shadow: 30px 30px #fcca46;
+  animation: flash .4s ease infinite alternate;
+}
+
+@keyframes flash {
+    from { opacity: 1; }  
+  to { opacity: 0; }
+}
+

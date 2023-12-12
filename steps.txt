@@ -1,0 +1,130 @@
+To create a dynamic birthday wishing template with Node.js,
+ you can use a templating engine like Handlebars or EJS.
+ Here are the basic steps you can follow:
+
+Set up a Node.js project with Express.
+js framework and install necessary dependencies.
+
+Create an HTML form using a templating
+ engine that will allow the user to enter 
+ the recipient's name, age, message, and upload an image.
+  You can use HTML, CSS, and JavaScript to create the form.
+
+Handle form submissions on the server-side using Express.js.
+ Use middleware like multer to handle file uploads.
+
+Generate a unique URL for the created birthday wish and store the data in a database.
+ You can use a NoSQL database like MongoDB for this purpose.
+
+Create a page with the unique URL that will display the customized birthday wish.
+ You can use a templating engine to generate the HTML for the page.
+
+Implement features like editing text, changing font, 
+and selecting images using JavaScript and CSS.
+
+Deploy the application to a hosting provider
+ like Heroku or AWS so that users can access it from anywhere.
+
+This is a high-level overview of the process.
+ You will need to go into more detail for each step and customize the application 
+ to suit your needs.
+
+
+Design the layout and functionality of your website: Before you begin coding,
+ you should sketch out the layout and functionality of your website. This includes 
+ deciding on the different features and how the user interface will be designed.
+
+Create the front-end of your website: Once you have an idea of
+ what you want your website to look like, you can start building out the
+  front-end of your website. This includes writing HTML, CSS, and JavaScript
+   to create the user interface and add functionality to the website.
+
+Set up a Node.js server: You'll need to set up a server with Node.js to handle
+ the back-end functionality of your website. This includes handling user data,
+  generating and sharing links, and processing user input.
+
+Choose a database: You'll need a database to store user information, 
+such as message content and user preferences. MongoDB, PostgreSQL,
+ and MySQL are popular databases for Node.js applications.
+
+Connect your front-end to your back-end: You'll need to connect the front-end 
+and back-end of your website so that user input is properly handled and data is 
+saved in the database.
+
+Add user authentication: To protect user data, you'll need to implement user
+ authentication. This involves creating user accounts and a login system.
+
+Test and deploy: Before you release your website, make sure to test it
+ thoroughly to ensure it is functioning properly. Once you're satisfied,
+  deploy your website to a hosting service so that it can be accessed by users.
+
+Keep in mind that this is a high-level overview and there are many
+ technical details involved in creating a website. It may be helpful 
+ to break down each step into smaller pieces and research more in-depth
+  on how to accomplish each task.
+
+
+
+ create a template birthday wish website that user can 
+ edit everything on page like font , text ,image and many 
+ more and after completing edit then user 
+ get unique url to visit his edited page , in html , css , javascript , node.js
+
+
+
+
+
+ "Life is too short to not celebrate every moment"
+"Making memories with you is my favorite thing to do"
+"Birthdays are nature's way of telling us to eat more cake"
+"The biggest adventure you can ever take is to live the life of your dreams"
+"Good times and crazy friends make the best memories"
+"Life is a party, dress like it"
+"Live, laugh, love, and celebrate every moment"
+"The best things in life are the people we love, the places we've been, and the memories we've made along the way"
+"Today is a good day to have a good day"
+"Let's make today a memory that we will cherish forever"
+
+“Happy 23rd Birthday Parveen! May your day be filled with love, laughter and all your favorite things.”
+“ing you a very Happy BirthWishday Parveen! May this year bring you all the happiness and success you deserve at 23.”
+“23 looks good on you Parveen! Have a fantastic birthday filled with everything that brings you joy.”
+I hope these quotes help make Parveen’s birthday even more special! 🎉
+
+
+“Happy 23rd Birthday Parveen! Don’t worry about getting older, you’re still hot… it just comes in flashes now.”
+“Parveen, at 23 you’re not getting older, you’re just increasing in value. Happy Birthday!”
+“Happy Birthday Parveen! You know you’re getting old when the candles cost more than the cake.”
+I hope these quotes bring a smile to Parveen’s face on her special day! 😄
+
+“Happy 23rd Birthday Parveen! You’re not old, you’re just chronologically gifted.”
+“Parveen, don’t worry about getting older. You still have the face of a teenager… if you add 10 years. Happy Birthday!”
+“Happy Birthday Parveen! Age is just a number… in your case a really high one.”
+I hope these quotes add some humor to Parveen’s birthday celebration! 😂
+
+
+“Happy 23rd Birthday Parveen! You know you’re getting old when you have to scroll down to find your birth year on online forms.”
+“Parveen, don’t worry about getting older. You’re still hot… it just comes in flashes now. Happy Birthday!”
+“Happy Birthday Parveen! You know you’re getting old when your back goes out more than you do.”
+I hope these quotes bring some laughter to Parveen’s birthday celebration! 😆
+
+
+“Happy 23rd Birthday Parveen! May this year be full of new opportunities and endless possibilities.”
+“Parveen, on your 23rd birthday, remember that the future belongs to those who believe in the beauty of their dreams. Happy Birthday!”
+“Happy Birthday Parveen! May your day be filled with love and your year with blessings and success.”
+I hope these quotes inspire Parveen to chase her dreams and make this year her best one yet! 🌟
+
+
+“जन्मदिन की हार्दिक शुभकामनाएं परवीन! आपका दिन प्रेम से भरा हो और आपका साल आशीर्वादों और सफलता से।”
+“परवीन, आपके 23 वें जन्मदिन पर, हमेशा याद रखें कि कल के मालिक उनके होते हैं जो अपने सपनों की सुंदरता में विश्वास करते हैं।”
+“हैप्पी 23rd Birthday Parveen! मुस्कुराते हुए महसूस करें, महसूस करें कि प्रत्येक पल महत्वपूर्ण है!”
+I hope these wishes add a special touch to Parveen’s birthday celebration! 🎊
+
+Received message. Sure! Here are some birthday wishes in Hindi for Parveen: 1. "जन्मदिन की हार्दिक शुभकामनाएं परवीन! आपका दिन प्रेम से भरा हो और आपका साल आशीर्वादों और सफलता से।" 2. "परवीन, आपके 23 वें जन्मदिन पर, हमेशा याद रखें कि कल के मालिक उनके होते हैं जो अपने सपनों की सुंदरता में विश्वास करते हैं।" 3. "हैप्पी 23rd Birthday Parveen! मुस्कुराते हुए महसूस करें, महसूस करें कि प्रत्येक पल महत्वपूर्ण है!" I hope these wishes add a special touch to Parveen's birthday celebration! 🎊
+
+
+हैप्पी 23rd Birthday Parveen! आपके बढ़ते हुए उम्र को चिंता मत करो, आप अभी भी हॉट हो… अब सिर्फ flashes में।”
+“परवीन, 23 की उम्र में आपका मूल्य कम नहीं होता है, सिर्फ badhta है।”
+“हैप्पी Birthday Parveen! आपके पुराने होने का पता तब चलता है जब candles cake से महंगे पड़ने लगते हैं!”
+I hope these wishes bring some laughter to Parveen’s birthday celebration! 😄
+
+

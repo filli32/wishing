@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="/stylesheet/wishpage.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+
+  <!--***************** fireworks link hare ***************** -->
+  <link rel="stylesheet" type="text/css" href="../fireworks/style.css">
+  
+</head>
+
+<body>
+
+<!-- <div id="audio">
+  <audio controls="autoplay"  >
+ <source src="./audio/Happy Birthday _ Nakas Aziz _ Ishq Forever 2016 Full HD Video SOng (320 kbps).mp3" type="audio/mp3">
+  </audio>
+</div> -->
+
+
+  <section class="fireworks" id="sec1"></section>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="../fireworks/jquery.fireworks.js"></script>
+  <script type="text/javascript">
+    $('.fireworks').fireworks({
+      sound: false, // sound effect
+      opacity: 0.6,
+      width: '100%',
+      height: '100%'
+    });
+  </script>
+
+  <!-- ****************** name disine coding started hare****************  -->
+  <section class="first_section">
+    <div class="from">From</div>
+    <div class="name item">
+      <h1 data-heading="{{wish.wisher}}">
+        <span contenteditable data-heading='{{wish.wisher}}'>{{wish.wisher}}</span>
+      </h1>
+    </div>
+    
+    <div class="birthday_gif">
+      <img src="https://www.funimada.com/assets/images/cards/big/bday-509.gif" alt="gif">
+
+    </div>
+
+
+    <!-- ***********************************
+               this is the image section 
+          ********************************** -->
+
+    <div class="user_image item ">
+
+      {{#if wish.image}}
+      <img src="{{wish.image}}" alt="Birthday Wish Image">
+    {{/if}}
+
+    </div>
+
+    <div id="paper">
+      <div id="pattern">
+        <div id="content">
+          Dear <span>{{wish.recipientName}}</span>
+          <br /><br />{{wish.message}}</div>
+      </div>
+    </div>
+
+  </section>
+
+ 
+
+  <section class="third_section">
+    <!-- *******************************************
+          Cake desine hare 
+          ********************************** -->
+          <div class="container">
+            <div class="bdayCake">
+              <div class="plate"></div>
+              <div class="cream"></div>
+              <div class="candle"></div>
+              <div class="flame">
+                <div class="one">+</div>
+                <div class="two">+</div>
+                <div class="three">+</div>
+              </div>
+            </div>
+          </div>
+    
+  </section>
+  <section class="fourth_section">
+    <div id="celebrate_btn">
+      <span id="let_celebrate">Let's Celebrate</span>
+      </div>
+      <div id="create_btn">
+      <a href="/create_your/"><span id="let_create">Create your</span></a>  
+        </div>
+  </section>
+
+
+  <marquee class="left_side" behavior="scroll" direction="up" scrolldelay="5"> <br>
+
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+
+  </marquee>
+
+  <marquee class="right_side" behavior="scroll" direction="down" scrolldelay="5"><br>
+
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-VOftdFhYdEg/XekHzTFchDI/AAAAAAAADI8/mOvnFbG-3a4L1cJcA7CXKxN1esOUlAXMwCLcBGAsYHQ/s1600/SideBalloon.png"
+      height="129px" width="35px" /><br><br>
+    <img
+      src="https://1.bp.blogspot.com/-YUT93Sg1rdo/XekKENbBtXI/AAAAAAAADJM/BekodzyGo1ohHBArEz-vdAqiRX2ezJe8QCLcBGAsYHQ/s1600/SideFlower.png"
+      height="129px" width="35px" /><br><br>
+
+  </marquee>
+
+
+ 
+<script>
+  
+  const celebrate_btn = document.getElementById("celebrate_btn");
+  celebrate_btn.addEventListener("click", delayMybtn);
+  celebrate_btn.addEventListener("click" , playAudio);
+ 
+  function playAudio() {
+    var audio = new 
+    Audio("/audio/Happy Birthday _ Nakas Aziz _ Ishq Forever 2016 Full HD Video SOng (320 kbps).mp3");
+    audio.play();
+  }
+  function delayMybtn() {
+    setTimeout(mybtn, 370*100);
+  }
+
+  function mybtn() {
+    document.getElementById("sec1").style.visibility = "visible";
+  }
+  
+  
+  
+</script>
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+  
+
+
+
+</body>
+
+</html>

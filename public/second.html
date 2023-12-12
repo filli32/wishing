@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday wish Template</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, <span id="recipient-name"></span>!</h1>
+        <p>Wishing you all the best on your <span id="age"></span> birthday.</p>
+        <p><span id="message"></span></p>
+        
+      
+
+    <form action="/submit-form" method="POST" enctype="multipart/form-data">
+
+        <input class="input-group"type="text" name="wisher" placeholder="Enter your name">
+        <input class="input-group"type="text" name="recipientName" placeholder="Enter birthday person name">
+        <input class="input-group"type="number" name="age" placeholder="Enter your age">
+        <textarea name="message" placeholder="Enter your message"></textarea>
+        <input class="input-group"type="file" name="image" accept="image/*">
+        <button class="button" type="submit">Submit</button>
+        
+      </form>
+
+      <!-- <img src="//uploads/1678524713407-pexels-designecologist-1779487.jpg" alt="this is your image ">
+      <img src="/uploads/photo.png" alt="this is your second image">
+      <img src="/uploads/vvvcv.jpg" alt="this is my vvcv image"> -->
+    </div>
+  <!-- <div><p>{{url}}</p></div> -->
+      <!-- <script src="script.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+
+    <!-- ***********navbar************ -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#">Logo</a> 
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Birthday Quotes</a></li>
+          <li><a href="#">Download Anything</a></li>
+          <li><a href="#">Festival Wishes</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    
+    <!-- ***************landing page ************** -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Happy Birthday!</h1>
+        <p>Good times and crazy friends make the best memories.</p>
+        <a href="url" class="btn">let's celebrate</a>
+      </div>
+    </section>
+    
+
+<!-- *************Slider *************** -->
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="uploads/1678633309996-pexels-trace-hudson-2365457.jpg"></div>
+        <div class="slide"><img src="uploads/1678949581514-Screenshot (1).png"></div>
+        <div class="slide"><img src="uploads/1678949835162-IMG_20230311_132804.jpg"></div>
+      </div>
+      <div class="controls">
+        <div class="prev">&#10094;</div>
+        <div class="next">&#10095;</div>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+
+    <style>
+/* ***********navbar stylpe ************** */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav .logo a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav .menu li {
+  margin: 0 1rem;
+}
+
+nav .menu li a {
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .menu li a:hover {
+  color: #f1c40f;
+}
+
+nav .menu-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav .menu {
+    display: none;
+  }
+  nav .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  nav.scrolled .menu-btn {
+    color: #fff;
+  }
+  nav .menu-btn i {
+    font-size: 1.5rem;
+  }
+  nav .menu-btn.active i {
+    transform: rotate(90deg);
+  }
+  nav .menu-btn.active i:before {
+    content: "\f00d";
+  }
+  nav .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+  }
+  nav .mobile-menu li {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+  nav .mobile-menu li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  nav .mobile-menu li a:hover {
+    color: #f1c40f;
+  }
+  nav .menu-btn.active ~ .mobile-menu {
+    display: block;
+  }
+}
+
+
+ /* ***************Hero section desine **************** */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://picsum.photos/1600/900');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* **********slider style *********** */
+    body {
+  margin: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300vw;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+.prev,
+.next {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  margin-left: 20px;
+}
+
+.next {
+  margin-right: 20px;
+}
+
+
+    </style>
+
+    <script>
+  const slider = document.querySelector(".slider");
+const slides = document.querySelector(".slides");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const slideWidth = slider.clientWidth;
+let slideIndex = 0;
+
+function moveSlides() {
+  slides.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  if (slideIndex < 2) {
+    slideIndex++;
+    moveSlides();
+  } else {
+    slideIndex = 0;
+    moveSlides();
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (slideIndex > 0) {
+    slideIndex--;
+    moveSlides();
+  } else {
+    slideIndex = 2;
+    moveSlides();
+  }
+});
+
+moveSlides();
+
+
+
+    </script>
+  </body>
+</html>

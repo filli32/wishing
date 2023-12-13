@@ -71,6 +71,9 @@ app.get('/', (req, res) => {
 app.get('/wishpage', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/wishpage.html'));
 });
+app.get('/urlpage',(req ,res) => {
+  res.sendFile(path.join(__dirname, '/public/urlpage.html' ))
+})
 
 // Handle form submissions when a POST request is made to the root URL
 app.post('/submit-form', upload.single('image'), (req, res) => {

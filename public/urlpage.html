@@ -19,26 +19,24 @@
 
 <body>
 
-  <div class="container_container">
     <div class="second_layer_container">
     <div class="third_layer_container">
-    <h2>Happy Birthday, <span id="recipient-name"></span>!</h1>
-    <p>Sent your birthday wish to your friend <span id="age"></span> birthday.</p>
-    <p><span id="message"></span></p>
-
+    <h2>Happy Birthday,!</h2>
+    <p>Sent your birthday wish to your friend.</p>
+    
     <form action="/submit-form" id="myForm" onsubmit="submitForm(event)" method="POST" enctype="multipart/form-data">
-
-      <input class="input-group" type="text" name="wisher" placeholder="Enter your first name">
-      <input class="input-group" type="text" name="recipientName" placeholder="Enter birthday person name">
-      <textarea name="message" placeholder="Enter your message for your birthday person"></textarea>
-      <input class="input-group" type="file" name="image" accept="image/*">
-      <button class="button" type="submit">Submit</button>
+      <input class="input_group first_name " type="text" name="wisher" placeholder="Enter your first name">
+      <input class="input_group birthday_person_name" type="text" name="recipientName" placeholder="Enter birthday person name">
+       <textarea name="message" class="input_group message_field" placeholder="Enter your message for your birthday person"></textarea>
+       <p style="font-size:11px;">Upload your birthday person image</p>
+       <input class="input_group input_image" type="file" name="image" accept="image/*">
+      <p style="font-size:11px;">Don't worry your data safe and secure ,<br> our algorithem will delete everything you fill hare after 24 hours</p>
+      <button class="button desine_button input_group" type="submit">Submit</button>
 
     </form>
 
     <div class="unique_url" id="uniqueLink"></div>
 
-</div>
 </div>
 </div>
 
@@ -56,17 +54,13 @@
       });
     </script>
 
-<div class="whole_page">
+
     <!-- ****************** name disine coding started hare****************  -->
     <section class="first_section">
+      
       <div class="from">From</div>
-      <div class="name item">
-        <h1 data-heading="Parveen">
-          <span contenteditable data-heading='Parveen'>Parveen</span>
-        </h1>
-      </div>
-
-      <div class="birthday_gif">
+      <div class="sender_name">Parveen</div> 
+        <div class="birthday_gif">
         <img src="https://www.funimada.com/assets/images/cards/big/bday-509.gif" alt="gif">
 
       </div>
@@ -122,7 +116,8 @@
         <a href="url"><span id="let_create">Create your</span></a>
       </div>
     </section>
-  </div>
+
+
 
     <marquee class="left_side" behavior="scroll" direction="up" scrolldelay="5"> <br>
 
@@ -299,7 +294,30 @@
 
     </marquee>
 
+        
+    <script>
 
+      async function submitForm(event) {
+          event.preventDefault(); // Prevent form from submitting
+          
+          // Get form data
+          const formData = new FormData(document.getElementById('myForm'));
+          
+          try {
+            const response = await fetch('/submit-form', {
+              method: 'POST',
+              body: formData
+            });
+          
+            const url = await response.text();
+            // Display unique URL on form page
+            document.getElementById('uniqueLink').innerHTML = ` Your unique URL is: <span href="">${url}</span>`;
+          } catch (error) {
+            console.error(error);
+          }
+        }
+        
+       </script>
 
     <script>
 

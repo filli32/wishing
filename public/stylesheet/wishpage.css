@@ -14,9 +14,45 @@ body {
 
   background-image: linear-gradient(to right, #DECBA4, #3E5151);
 
- 
-
 }
+.sender_name{
+  text-transform: uppercase;
+background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+font-size: 60px;
+}
+
+@keyframes textclip {
+to {
+  background-position: 200% center;
+}
+}
+
+@media  (max-width:900px){
+.sender_name{
+ font-size: 40px;
+};
+};
+@media (max-width:500px){
+.sender_name{
+  font-size: 26px;
+}
+}
+@media (max-width:400px){
+  .sender_name{
+    font-size: 25px;
+  }
+}
+
 #audio{
   /* visibility: hidden; */
   position: absolute;
@@ -36,18 +72,21 @@ body {
  
 }
 
-.name{
-  padding: 2rem;
+.name_container{
+  width: 100vh;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .from{
 
   font-size: 2rem;
   
 }
-.birthday_gif img{
-  margin-top: 2rem;
-  
-}
+
+
 .user_image img{
   width: 31rem;
   height: auto;
@@ -73,92 +112,6 @@ body {
   border-left: 2px solid red;
   border-right: 2px solid red;
 }
-
-
-
-
-
-
-
-
-/* font desinge  */
-
-h1 {
-  font-family: "Rig Bold Face", sans-serif;
-  text-transform: uppercase;
-  font-size: 3rem;
-  text-align: center;
-  font-weight: normal;
-  /* margin-top: 10rem; */
-  top: 12%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  color: #91d4ff;
-}
-
-h1:before,
-h1:after,
-h1 span:before,
-h1 span:after {
-  content: attr(data-heading);
-  position: absolute;
-  overflow: hidden;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-  font-weight: normal;
-  text-shadow: none;
-}
-
-h1:before {
-  color: #fff;
-  font-family: "Rig Bold Inline", sans-serif;
-}
-
-h1:after {
-  font-family: "Rig Bold Coarse", sans-serif;
-  color: #040351;
-}
-
-span::before {
-  font-family: "Rig Bold Shadow", sans-serif;
-  color: #d2caaf00;
-  z-index: -1;
-}
-
-span::after {
-  font-family: "Rig Bold Extrude", sans-serif;
-  color: #4d8bea;
-  z-index: -1;
-}
-
-@font-face {
-  font-family: "Rig Bold Coarse";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldCoarse.otf");
-}
-
-@font-face {
-  font-family: "Rig Bold Extrude";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldExtrude.otf");
-}
-
-@font-face {
-  font-family: "Rig Bold Shadow";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldShadow.otf");
-}
-
-@font-face {
-  font-family: "Rig Bold Face";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldFace.otf");
-}
-
-@font-face {
-  font-family: "Rig Bold Inline";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Rig-BoldInline.otf");
-}
-
 
 .birthday_gif img {
 
@@ -264,7 +217,6 @@ span::after {
   padding-left: 56px;
   padding-right: 16px;
   line-height: 25px;
-  font-family: 'Dancing Script', cursive;
   font-size: 19px;
   letter-spacing: 1px;
   word-spacing: 5px;
@@ -312,6 +264,31 @@ span::after {
   color: #fff;
 }
 
+#popup-container {
+  display: none;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+#countdown {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+#close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  /* background-color: #007bff; */
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;
+}
 
 /* responsive degines */
 

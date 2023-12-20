@@ -1,11 +1,52 @@
-.whole_page{
-  
-}
-
-
-.container_container{
-position: absolute;
-}
 .second_layer_container{
-  position: fixed;
+   background-color: rgb(183, 183, 143);
+}
+.third_layer_container{
+display: grid;
+place-items: center ;
+}
+.third_layer_container p{
+  margin-left: 1rem;
+}
+
+#myForm{
+  width: 25rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+@media (max-width:460px){
+  #myForm{
+    width: 18rem;
+  }
+}
+  
+
+
+.first_name{
+  /* margin: 0.2rem; */
+  padding: 0.3rem; 
+}
+.birthday_person_name{
+  /* margin: 0.2rem; */
+  padding: 0.3rem; 
+}
+.input_group{
+  margin: 0.2rem;
+}
+.desine_button{
+  font-size: 1rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  /* border: 1px solid linear-gradient(to left, green , white); */
+  border: none;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.557);
+}
+.desine_button:hover{
+  
+  color: azure;
 }

@@ -34,11 +34,7 @@
   <!-- ****************** name disine coding started hare****************  -->
   <section class="first_section">
     <div class="from">From</div>
-    <div class="name item">
-      <h1 data-heading="{{wish.wisher}}">
-        <span contenteditable data-heading='{{wish.wisher}}'>{{wish.wisher}}</span>
-      </h1>
-    </div>
+   <div class="sender_name">Parveen</div> 
     
     <div class="birthday_gif">
       <img src="https://www.funimada.com/assets/images/cards/big/bday-509.gif" alt="gif">
@@ -89,12 +85,14 @@
     
   </section>
   <section class="fourth_section">
-    <div id="celebrate_btn">
-      <span id="let_celebrate">Let's Celebrate</span>
+     <div id="celebrate_btn">
+      <span onclick="startCountdown()" id="let_celebrate">Let's Celebrate</span>
       </div>
-      <div id="create_btn">
-      <a href="url"><span id="let_create">Create your</span></a>  
-        </div>
+     <!-- Full screen modal -->
+     <div id="popup-container">
+      <div id="countdown">00:37</div>
+      <button id="close-btn" onclick="closePopup()">Wait for Countdown Over</button>
+  </div>
   </section>
 
 
@@ -302,6 +300,30 @@
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    let countdown;
+    
+    function startCountdown() {
+        document.getElementById('popup-container').style.display = 'block';
+        let timeInSeconds = 37; // 10 minutes
+        countdown = setInterval(function() {
+            const minutes = Math.floor(timeInSeconds / 60);
+            const seconds = timeInSeconds % 60;
+            document.getElementById('countdown').innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            timeInSeconds--;
+
+            if (timeInSeconds < 0) {
+                closePopup();
+            }
+        }, 1000);
+    }
+
+    function closePopup() {
+        document.getElementById('popup-container').style.display = 'none';
+        clearInterval(countdown);
+    }
+</script>
 
 
   

@@ -94,25 +94,13 @@ app.post('/submit-form', upload.single('image'), (req, res) => {
  
 newWish.save()
 .then(() => {
-  // Send a response to the client with the unique URL
+    // Send a response to the client with the unique URL
   const url = `${req.protocol}://${req.get('host')}/wish/${newWish.uniqueUrl}`;
   res.send(` Your unique URL is: <a href="${url}">${url}</a>`);
-})
-.catch(err => {
-  console.log(err);
-  res.status(500).send('Error saving birthday wish');
-});
-  // newWish.save((err) => {
-  //   if (err) {
-  //     console.log(err);
-  //     res.status(500).send('Error saving birthday wish');
-  //   } else {
-  //     // Send a response to the client with the unique URL
-  //     const url = `${req.protocol}://${req.get('host')}/wish/${newWish.uniqueUrl}`;
-  //     res.send(` Your unique URL is: <a href="${url}">${url}</a>`);
-  //   }
-  // });
-});
+}).catch(err =>
+  {console.log(err);
+    res.status(500).send('Error saving birthday wish');
+  });});
 
 
 
@@ -169,7 +157,7 @@ app.use((err, req, res, next) => {
 });
 
 
-app.listen(process.env.PORT ||3000 , () => {
+app.listen(process.env.PORT ||80 , () => {
   console.log('Server listening on port 3000'); 
 });
 
